@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cecilia Agatha</title>
+    <link rel="shortcut icon" href="img/logo.ico"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header">
+    <div class="container">
+        <a href="index.html" class="probootstrap-logo">Cecilia<span>.</span></a>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li class="active"><a href="activities.html">Activities</a></li>
+            <li><a href="lc.html">Learning Contract</a></li>
+          </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <section class="page-title">
+    <div class="container">
+          <h1>Activity 1: Notations</h1>
+    </div>
+  </section>
+
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+
+          <h2>Prefix: + X Y</h2>
+
+          <p>Operators are written before their operands. The expressions given above are equivalent to / * A + B C D</p>
+
+          <p>As for Postfix, operators are evaluated left-to-right and brackets are superfluous. Operators act on the two nearest values on the right. I have again added (totally unnecessary) brackets to make this clear:
+            <br><br>
+          (/ (* A (+ B C) ) D)</p>
+
+          <p>Although Prefix "operators are evaluated left-to-right", they use values to their right, and if these values themselves involve computations then this changes the order that the operators have to be evaluated in.</p>
+
+          <p>Because Postfix operators use values to their left, any values involving computations will already have been calculated as we go left-to-right, and so the order of evaluation of the operators is not disrupted in the same way as in Prefix expressions.</p>
+
+          <p><b>Examples:</b></p>
+          <p>+ * A B / C D<br>
+          / * A + B C D<br>
+          * A + B / C D</p>
+
+          <h2>Infix: X + Y</h2>
+
+          <p>Operators are written in-between their operands. This is the usual way we write expressions. An expression such as A * ( B + C ) / D is usually taken to mean something like: "First add B and C together, then multiply the result by A, then divide by D to give the final answer."</p>
+
+          <p>Infix notation needs extra information to make the order of evaluation of the operators clear: rules built into the language about operator precedence and associativity, and brackets ( ) to allow users to override these rules. For example, the usual rules for associativity say that we perform operations from left to right, so the multiplication by A is assumed to come before the division by D. Similarly, the usual rules for precedence say that we perform multiplication and division before we perform addition and subtraction.</p>
+
+          <p><b>Examples:</b></p>
+          <p>A * B + C / D<br>
+            A * (B + C) / D<br>
+            A * (B + C / D)</p>
+          
+          <h2>Postfix: X Y +</h2>
+          <p>Operators are written after their operands. The infix expression given above is equivalent to A B C + * D /
+          </p>
+          <p>The order of evaluation of operators is always left-to-right, and brackets cannot be used to change this order. Because the "+" is to the left of the "*" in the example above, the addition must be performed before the multiplication. 
+          </p>
+          <p>Operators act on values immediately to the left of them. For example, the "+" above uses the "B" and "C". We can add (totally unnecessary) brackets to make this explicit: 
+            <br><br>
+          ( (A (B C +) *) D /) 
+          
+          <p>Thus, the "*" uses the two values immediately preceding: "A", and the result of the addition. Similarly, the "/" uses the result of the multiplication and the "D".
+          </p>
+
+          <p><b>Examples:</b></p>
+          <p>A B * C D / +<br>
+            A B C + * D /<br>
+            A B C D / + *</p>
+
+          <p><a href="activities.html" role="button" class="btn btn-primary btn-sm">Back</a></p>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  </body>
+</html>
