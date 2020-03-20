@@ -1,3 +1,2 @@
 # Portfolio-Cabiara
-Cabiara, Cecilia Agatha R.
-CCS3-2G
+CCS3-2G Cabiara, Cecilia Agatha R.
